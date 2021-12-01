@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" id="nav-home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-newTodo">New todo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-list">List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="nav-login">Log-in</a>
+      </li>
+      
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+      <script>
+        $('#nav-home').click(function(){
+          window.location.replace('/')
+        })
+        $('#nav-newTodo').click(function(){
+          window.location.replace('/write')
+        })
+        $('#nav-list').click(function(){
+          window.location.replace('/list')
+        })
+        $('#nav-login').click(function(){
+          window.location.replace('/login')
+        })
+      </script>
+  </div>
+</nav>
